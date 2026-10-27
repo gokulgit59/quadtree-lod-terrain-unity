@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8917481048484243621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4546140556390485787}
+  - component: {fileID: 1412016927874372732}
+  m_Layer: 0
+  m_Name: NeuralTerrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4546140556390485787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917481048484243621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412016927874372732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8917481048484243621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe15e863efb1bd4c9e34cdea8e226c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeuralTerrain
+  sourceHeightmap: {fileID: 2800000, guid: 79a87af9a1ec0714ab03706206b67002, type: 2}
+  sourceSketch: {fileID: 2800000, guid: b0ec1d2ec49b7764897a3c0dea6b34f7, type: 3}
+  autoContrast: 1
+  contrastClipPercent: 0.3
+  despike: 1
+  smoothing: 2
+  maxHeight: 600
+  heightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  resolution: 2049
+  detailAmplitude: 10
+  detailScale: 140
+  detailOctaves: 4
+  detailRidges: 0.1
+  detailWarp: 0.3
+  detailOnHighGround: 0.8
+  seed: 1337
+  fallbackScale: 1600
+  carveRivers: 1
+  riverDepth: 7
+  riverWidth: 2
+  ridgeHeight: 25
+  ridgeWidth: 3
+  ridgeSharpen: 0.7
+  waterMaterial: {fileID: 2100000, guid: 1147b1a376227a74c9b4e52a1e9f01b2, type: 2}
+  lakeLevel: 0.05
+  animateWaterInEditMode: 1
+  riverMoisture: 0.8
+  riverSpread: 8
+  noiseMoisture: 0.35
+  moistureNoiseScale: 900
+  biomes:
+  - {fileID: 11400000, guid: 67f2bf056102f4ac98e747ab96ccc885, type: 2}
+  - {fileID: 11400000, guid: 0a2a17e07930145f5a3d4f26d9319525, type: 2}
+  - {fileID: 11400000, guid: 491dd97361702413c92e040fcd7a1ba4, type: 2}
+  - {fileID: 11400000, guid: bbe86fd36c43f4c4ca8d757f5713ca0d, type: 2}
+  - {fileID: 11400000, guid: 441965a2bb3244bb68f495b8695b4420, type: 2}
+  - {fileID: 11400000, guid: 815e7cb48d0604bc280f8efd3b846f6e, type: 2}
+  biomeBlend: 0.06
+  leafNodeSize: 64
+  lodLevels: 7
+  gridResolution: 32
+  lodDistance: 3
+  morphStart: 0.66
+  viewer: {fileID: 0}
+  material: {fileID: 2100000, guid: 842c2c3304a054915861033048fb2f34, type: 2}
+  castShadows: 1
+  generateCollider: 1
