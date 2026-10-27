@@ -108,19 +108,6 @@ Model verification on the bundled sketch: **PASS**. GPU vs CPU max error 1.1e-5,
 
 ## Getting started
 
-The model file is stored with **Git LFS**. Install it before cloning, or the model will be a small pointer file and inference will fail.
-
-```bash
-git lfs install
-git clone https://github.com/gokulgit59/quadtree-lod-terrain-unity.git
-```
-
-If you already cloned without LFS:
-
-```bash
-git lfs pull
-```
-
 - **Unity:** 6000.5.1f1 (Unity 6.5)
 - **Render pipeline:** Universal Render Pipeline (URP 17.5)
 - **Packages:** Inference Engine 2.6.1, Burst, Collections, Mathematics
