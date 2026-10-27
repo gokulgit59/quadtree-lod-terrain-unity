@@ -107,3 +107,10 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# IDE folders
+.idea/
+.vscode/
+
+# Video captures are hosted externally
+*.mp4
